@@ -42,14 +42,16 @@
 
     </bean>
 
+    <bean id="BeanFactoryAwareDemo" class="com.stackroute.awareInterface.BeanFactoryAwareDemo">
+
+    </bean>
     <bean id="ResourceLoaderAwareDemo" class="com.stackroute.awareInterface.ResourceLoaderAwareDemo">
 
     </bean>
 
-    <bean id="BeanFactoryAwareDemo" class="com.stackroute.awareInterface.BeanFactoryAwareDemo">
-
+    <bean id="BeanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean"  init-method="customInit" destroy-method="customDestroy">
+        <property name="message" value="i'm property message" />
     </bean>
-
 
     <!--    <bean id="actor" class="com.stackroute.domain.Actor">-->
 

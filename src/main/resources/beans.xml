@@ -49,6 +49,10 @@
 
     </bean>
 
+    <bean id="BeanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean"  init-method="customInit" destroy-method="customDestroy">
+        <property name="message" value="i'm property message" />
+    </bean>
+
     <!--    <bean id="actor" class="com.stackroute.domain.Actor">-->
 
 <!--        <constructor-arg index="0" value="alia"></constructor-arg>-->
