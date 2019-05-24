@@ -8,10 +8,12 @@ public class Main
 {
     public static void main(String[] args) {
 
+        //using applicationContext
         ApplicationContext context1 = new ClassPathXmlApplicationContext("beans.xml");
-        Movie movie4= (Movie) context1.getBean("movie");
-        Movie movie5= (Movie) context1.getBean("movie1");
-        System.out.println(movie4==movie5);
+        Movie movie= (Movie) context1.getBean("movie");
+        System.out.println(movie);
+        Movie movie1= (Movie) context1.getBean("movie1");
+        System.out.println(movie1);
     }
 }
 

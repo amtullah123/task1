@@ -2,21 +2,12 @@ package com.stackroute.domain;
 
 public class Movie{
     private int id;
-    private String mname;
+    private String movieName;
     private Actor actor;
 
-    public Movie(int id, String mname, Actor actor) {
-        this.id = id;
-        this.mname = mname;
-        this.actor = actor;
-    }
 
     public Movie() {
 
-    }
-
-    public Actor getActor() {
-        return actor;
     }
 
     public int getId() {
@@ -27,20 +18,19 @@ public class Movie{
         this.id = id;
     }
 
-    public String getMName() {
-        return mname;
+    public String getMovieName() {
+        return movieName;
     }
 
-    public void setMName(String name)
-    {
-        this.mname = name;
+    public void setMovieName(String movieName) {
+        this.movieName = movieName;
+    }
+
+    public Actor getActor() {
+        return actor;
     }
 
     public void setActor(Actor actor) {
-        this.actor = actor;
-    }
-
-    public Movie(Actor actor) {
         this.actor = actor;
     }
 

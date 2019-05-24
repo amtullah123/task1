@@ -7,18 +7,46 @@
 
 
 
-    <bean name="movie,movie1" class="com.stackroute.domain.Movie" scope="prototype">
+<!--    <bean name="movie,movie1" class="com.stackroute.domain.Movie" scope="prototype">-->
 
-        <constructor-arg index="0" value="1"></constructor-arg>
-        <constructor-arg index="1" value="kalank"></constructor-arg>
-        <constructor-arg index="2" ref="actor"></constructor-arg>
+<!--        <constructor-arg index="0" value="1"></constructor-arg>-->
+<!--        <constructor-arg index="1" value="kalank"></constructor-arg>-->
+<!--        <constructor-arg index="2" ref="actor"></constructor-arg>-->
+<!--    </bean>-->
+
+    <bean id="movie" class="com.stackroute.domain.Movie" autowire="byName">
+
+        <property name="id" value="1"></property>
+        <property name="movieName" value="kalank"></property>
     </bean>
 
-    <bean id="actor" class="com.stackroute.domain.Actor">
+    <bean id="movie1" class="com.stackroute.domain.Movie" autowire="byType">
 
-        <constructor-arg index="0" value="alia"></constructor-arg>
-        <constructor-arg index="1" value="Female"></constructor-arg>
-        <constructor-arg index="2" value="30"></constructor-arg>
+        <property name="id" value="1"></property>
+        <property name="movieName" value="kalank"></property>
+    </bean>
+
+    <bean name="actor" class="com.stackroute.domain.Actor">
+
+        <property name="name" value="alia"></property>
+        <property name="gender" value="Female"></property>
+        <property name="age" value="30"></property>
 
     </bean>
+    <bean name="actor1" class="com.stackroute.domain.Actor" autowire="byType">
+
+        <property name="name" value="alia"></property>
+        <property name="gender" value="Female"></property>
+        <property name="age" value="30"></property>
+
+    </bean>
+
+
+<!--    <bean id="actor" class="com.stackroute.domain.Actor">-->
+
+<!--        <constructor-arg index="0" value="alia"></constructor-arg>-->
+<!--        <constructor-arg index="1" value="Female"></constructor-arg>-->
+<!--        <constructor-arg index="2" value="30"></constructor-arg>-->
+
+<!--    </bean>-->
 </beans>
