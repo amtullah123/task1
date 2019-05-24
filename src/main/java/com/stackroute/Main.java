@@ -16,11 +16,11 @@ public class Main
         beanLifecycleDemoBean.destroy();
 
 
-//        Movie movie= (Movie) context1.getBean("movie");
-//        System.out.println(movie);
+        Movie movie= (Movie) context1.getBean("movie");
+        System.out.println(movie);
 
-//        Movie movie1= (Movie) context1.getBean("movie1");
-//        System.out.println(movie1);
+        Movie movie1= (Movie) context1.getBean("movie1");
+        System.out.println(movie1);
     }
 }
 

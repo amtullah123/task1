@@ -53,6 +53,9 @@
         <property name="message" value="i'm property message" />
     </bean>
 
+    <bean id="BeanPostProcessorDemoBean" class="com.stackroute.demo.BeanPostProcessorDemoBean">
+
+    </bean>
     <!--    <bean id="actor" class="com.stackroute.domain.Actor">-->
 
 <!--        <constructor-arg index="0" value="alia"></constructor-arg>-->
