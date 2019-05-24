@@ -7,10 +7,10 @@
 
 
 
-    <bean id="movie" class="com.stackroute.domain.Movie">
+    <bean name="movie,movie1" class="com.stackroute.domain.Movie" >
 
         <constructor-arg index="0" value="1"></constructor-arg>
-        <constructor-arg index="1" value="ddlj"></constructor-arg>
+        <constructor-arg index="1" value="kalank"></constructor-arg>
         <constructor-arg index="2" ref="actor"></constructor-arg>
     </bean>
 
