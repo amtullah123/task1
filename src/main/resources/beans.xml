@@ -33,13 +33,7 @@
         <property name="age" value="30"></property>
 
     </bean>
-    <bean name="actor1" class="com.stackroute.domain.Actor" autowire="byType">
-
-        <property name="name" value="alia"></property>
-        <property name="gender" value="Female"></property>
-        <property name="age" value="30"></property>
-
-    </bean>
+   
 
 
 <!--    <bean id="actor" class="com.stackroute.domain.Actor">-->
