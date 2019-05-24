@@ -12,8 +12,8 @@ public class Main
         ApplicationContext context1 = new ClassPathXmlApplicationContext("beans.xml");
         Movie movie= (Movie) context1.getBean("movie");
         System.out.println(movie);
-        Movie movie1= (Movie) context1.getBean("movie1");
-        System.out.println(movie1);
+//        Movie movie1= (Movie) context1.getBean("movie1");
+//        System.out.println(movie1);
     }
 }
 
